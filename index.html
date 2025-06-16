@@ -5,11 +5,31 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>JoyCon</title>
+    <link rel="stylesheet" href="style.css"/>
 </head>
 <body>
+   
+            
     <!-- buat komponen yang menggambarkan controller @MUTAMA -->
+    <div class="container">
+        <div id="result">right</div>
+        <div class="joycon">
+          <div class="left-panel">
+            <button onclick="show('up')">up</button>
     <!--    [^]                -->
     <!-- [<][v][>]      [B][A] -->
+        <div class="middle-buttons">
+            <button onclick="show('left')">left</button>
+            <button onclick="show('down')">down</button>
+            <button onclick="show('right')">right</button>
+        </div>
+    </div>
+        <div class="right-panel">
+            <button onclick="show('B')">B</button>
+            <button onclick="show('A')">A</button>
+        </div>
+        </div> 
+    </div>    
     <!--           atau        -->
     <!--    [^]                -->
     <!-- [<]   [>]      [B][A] -->
