@@ -1,67 +1,80 @@
-.body{
-    font-family: sans-serif;
-    background: #f4f4f4;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
+*{
     margin: 0;
-    position: relative;
+    padding: 0;
 }
 
-#result{
-    background: white;
-    padding: 20px;
-    font-size: 24px;
-    font-weight: bold;
-    margin-bottom: 20px ;
-    box-shadow: 0 0 5px rgba(0,0,0,0.2);
-    border-radius: 12px;
-    position: absolute;
+body {
+  font-family: sans-serif;
+  background: plum;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+
+.container {
+  text-align: center;
+}
+
+#result {
+  background: white;
+  padding: 20px;
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 5px rgba(0,0,0,0.2);
 }
 
 .joycon {
-    display: flex;
-    justify-content: center;
-    gap: 20px;
-  }
-  
-  .left-panel, .right-panel {
-    background: white;
-    padding: 20px;
-    border-radius: 15px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-  
-  .left-panel {
-    background-color: #cde;
-  }
-  
-  .middle-buttons {
-    display: flex;
-    gap: 30px;
-    margin-top: 10px;
-    border-radius: 20px;
-  }
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
 
-  .button {
-  padding: 20px 20px;
+.left-panel, .right-panel {
+  background: white;
+  padding: 20px;
+  border-radius: 15px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.left-panel {
+  background-color: #cde;
+}
+
+.middle-buttons {
+  display: flex;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.middle-buttons button{
+  background-color: gray;
+}
+
+.right-panel{
+  background-color: burlywood;
+  flex-direction: row;
+}
+
+.right-panel button{
+  background-color: pink;
+}
+
+button {
+  padding: 10px 20px;
   margin: 5px;
   border: none;
-  border-radius: 20px;
-  background-color: #eee;
+  border-radius: 10px;
+  background-color: coral;
   box-shadow: 2px 2px 4px #aaa;
   cursor: pointer;
   font-size: 16px;
-}
-
-.right-panel button {
-  background-color: #f8cbd1;
-  padding: 20px 20px;
-  border-radius: 20px;
-  flex-direction: column;
+  transition: 0.3s;
 }
 
 button:hover {
